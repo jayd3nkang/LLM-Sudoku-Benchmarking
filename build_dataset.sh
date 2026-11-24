@@ -17,7 +17,6 @@ conda activate cosc241_final
 GRIDS=${GRIDS:-600}                # x4 stages -> ~2400 puzzles (paper had 2,293)
 SEED=${SEED:-0}
 
-cd gen
 python build_dataset.py \
   --grids "$GRIDS" \
   --workers "$SLURM_CPUS_PER_TASK" \
