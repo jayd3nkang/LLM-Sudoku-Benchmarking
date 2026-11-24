@@ -23,4 +23,4 @@ python build_dataset.py \
   --workers "$SLURM_CPUS_PER_TASK" \
   --seed "$SEED" \
   --verify -1 \
-  --out "../data/puzzles_seed${SEED}.jsonl"
+  --out "data/puzzles_seed${SEED}.jsonl"
