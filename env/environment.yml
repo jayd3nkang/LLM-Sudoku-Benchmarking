@@ -1,0 +1,18 @@
+# CPU env for puzzle generation + analysis.
+# The GPU env for vLLM (open models) will be a separate file later, since it's heavy
+# and pinned to your cluster's CUDA version.
+#
+#   conda env create -f ~/environment.yml      (fresh machine)
+#   conda env update -f ~/environment.yml      (add packages to existing env)
+#   conda activate cosc241_final
+name: cosc241_final
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - pandas
+  - matplotlib
+  - pip:
+      - z3-solver
